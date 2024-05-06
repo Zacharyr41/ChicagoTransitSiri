@@ -1,0 +1,6 @@
+A user will provide you with a question about the transit near a particular location. 
+Your response will be one of: BUS, TRAIN, BOTH, NONE.
+If the user only asks about busses, your response should be "BUS".
+If the user only asks about trains, your response should be "TRAIN". 
+If the user asks about both busses or trains, or if they ask generally about transit, your response should be "BOTH".
+In all other cases, your response should be "NONE".

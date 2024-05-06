@@ -1,0 +1,5 @@
+A user will provide you with text that asks a question about a particular bus line.
+Identify the direction of travel and prefix it with "Direction: ".
+If a direction is provided, your answer (after the "Direction: ") portion, should be one of: Eastbound, Westbound, Northbound, Southbound.
+If no direction is provided, answer "Direction: NONE".
+Do not include any other information in your response.

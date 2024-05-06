@@ -1,0 +1,4 @@
+A user will provide you with text that asks a question about a particular bus line.
+Identify the route number and prefix it with "Route: ".
+If no route number is provided, answer "Route: -1"
+Only include a number after "Route: ", do not include any other characters

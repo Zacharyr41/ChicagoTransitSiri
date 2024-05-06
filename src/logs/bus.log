@@ -1,0 +1,401 @@
+2024-04-28 17:01:40,298	WARNING	{'msg': 'Invalid API access key supplied'}
+2024-04-28 17:02:15,377	WARNING	{'msg': 'Invalid API access key supplied'}
+2024-04-28 17:35:02,148	WARNING	{'stpid': '13016', 'msg': 'No service scheduled'}
+2024-04-28 17:35:02,150	WARNING	{'stpid': '17626', 'msg': 'No service scheduled'}
+2024-04-28 17:35:02,150	WARNING	{'stpid': '15163', 'msg': 'No service scheduled'}
+2024-04-28 17:40:09,935	WARNING	{'stpid': '13016', 'msg': 'No service scheduled'}
+2024-04-28 17:40:09,937	WARNING	{'stpid': '17626', 'msg': 'No service scheduled'}
+2024-04-28 17:40:09,937	WARNING	{'stpid': '15163', 'msg': 'No service scheduled'}
+2024-04-28 17:42:33,196	WARNING	{'stpid': '13016', 'msg': 'No service scheduled'}
+2024-04-28 17:42:33,198	WARNING	{'stpid': '17626', 'msg': 'No service scheduled'}
+2024-04-28 17:42:33,198	WARNING	{'stpid': '15163', 'msg': 'No service scheduled'}
+2024-04-28 18:15:21,264	INFO	
+  ┌──────────────────────────────────────────────────────────────┐
+  │                        Sanic v23.12.1                        │
+  │              Goin' Fast @ http://127.0.0.1:8000              │
+  ├───────────────────────┬──────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: server                     │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0     │
+  │ [48;2;255;13;104m                     [0m │                                      │
+  │ Build Fast. Run Fast. │                                      │
+  └───────────────────────┴──────────────────────────────────────┘
+
+2024-04-28 18:15:21,265	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 18:15:21,857	INFO	Starting worker [34243]
+2024-04-28 18:16:04,466	ERROR	Exception occurred while handling uri: 'http://127.0.0.1:8000/chat'
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "/Users/zacharyrothstein/Documents/transit-hackathon/src/server.py", line 18, in chat
+    verbalized_predictions = cta_data.verbalized_from_latlong(loc=lat_long_tup)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon/src/cta_data.py", line 62, in verbalized_from_latlong
+    predictions = process_predictions_from_stops(stop_id_list=nearby_stops)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon/src/cta_data.py", line 44, in process_predictions_from_stops
+    "time_until_arrival" : int(prediction["prdctdn"]),
+ValueError: invalid literal for int() with base 10: 'DUE'
+2024-04-28 18:17:20,754	INFO	Stopping worker [34243]
+2024-04-28 18:17:20,753	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 18:17:20,757	INFO	Worker complete [34243]
+2024-04-28 18:17:20,857	INFO	Server Stopped
+2024-04-28 18:17:23,795	INFO	
+  ┌──────────────────────────────────────────────────────────────┐
+  │                        Sanic v23.12.1                        │
+  │              Goin' Fast @ http://127.0.0.1:8000              │
+  ├───────────────────────┬──────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: server                     │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0     │
+  │ [48;2;255;13;104m                     [0m │                                      │
+  │ Build Fast. Run Fast. │                                      │
+  └───────────────────────┴──────────────────────────────────────┘
+
+2024-04-28 18:17:23,796	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 18:17:24,373	INFO	Starting worker [34292]
+2024-04-28 18:54:06,115	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 18:54:06,119	INFO	Stopping worker [34292]
+2024-04-28 18:54:06,124	INFO	Worker complete [34292]
+2024-04-28 18:54:06,226	INFO	Server Stopped
+2024-04-28 18:54:17,729	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-28 18:54:17,729	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 18:54:18,341	INFO	Starting worker [36711]
+2024-04-28 19:07:33,160	INFO	Stopping worker [36711]
+2024-04-28 19:07:33,163	INFO	Worker complete [36711]
+2024-04-28 19:07:33,587	INFO	Starting worker [37663]
+2024-04-28 19:07:38,287	INFO	Stopping worker [37663]
+2024-04-28 19:07:38,288	INFO	Worker complete [37663]
+2024-04-28 19:07:38,287	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 19:07:39,334	INFO	Server Stopped
+2024-04-28 19:07:42,471	INFO	
+  ┌──────────────────────────────────────────────────────────────┐
+  │                        Sanic v23.12.1                        │
+  │              Goin' Fast @ http://127.0.0.1:8000              │
+  ├───────────────────────┬──────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: server                     │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0     │
+  │ [48;2;255;13;104m                     [0m │                                      │
+  │ Build Fast. Run Fast. │                                      │
+  └───────────────────────┴──────────────────────────────────────┘
+
+2024-04-28 19:07:42,472	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 19:07:42,927	INFO	Starting worker [37685]
+2024-04-28 19:07:59,814	INFO	Stopping worker [37685]
+2024-04-28 19:07:59,814	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 19:07:59,816	INFO	Worker complete [37685]
+2024-04-28 19:07:59,921	INFO	Server Stopped
+2024-04-28 19:08:03,123	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-28 19:08:03,123	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 19:08:03,713	INFO	Starting worker [37720]
+2024-04-28 19:11:28,816	INFO	Stopping worker [37720]
+2024-04-28 19:11:28,920	INFO	Worker complete [37720]
+2024-04-28 19:18:58,528	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 19:18:59,049	INFO	Server Stopped
+2024-04-28 19:22:49,793	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-28 19:22:49,793	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 19:22:50,435	INFO	Starting worker [39499]
+2024-04-28 19:37:09,872	INFO	Stopping worker [39499]
+2024-04-28 19:37:09,874	INFO	Worker complete [39499]
+2024-04-28 19:37:10,389	INFO	Starting worker [39713]
+2024-04-28 19:37:48,583	INFO	Stopping worker [39713]
+2024-04-28 19:37:48,585	INFO	Worker complete [39713]
+2024-04-28 19:37:48,927	INFO	Starting worker [39731]
+2024-04-28 19:38:31,859	INFO	Stopping worker [39731]
+2024-04-28 19:38:31,858	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 19:38:31,861	INFO	Worker complete [39731]
+2024-04-28 19:38:32,586	INFO	Server Stopped
+2024-04-28 19:38:35,881	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-28 19:38:35,882	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 19:38:36,519	INFO	Starting worker [39760]
+2024-04-28 19:41:36,908	INFO	Stopping worker [39760]
+2024-04-28 19:41:36,910	INFO	Worker complete [39760]
+2024-04-28 19:41:37,481	INFO	Starting worker [39826]
+2024-04-28 19:41:40,724	INFO	Stopping worker [39826]
+2024-04-28 19:41:40,724	INFO	Received signal SIGINT. Shutting down.
+2024-04-28 19:41:40,727	INFO	Worker complete [39826]
+2024-04-28 19:41:41,035	INFO	Server Stopped
+2024-04-28 19:41:45,016	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-28 19:41:45,017	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-28 19:41:45,684	INFO	Starting worker [39850]
+2024-04-29 09:09:33,329	INFO	Stopping worker [39850]
+2024-04-29 09:09:33,332	INFO	Worker complete [39850]
+2024-04-29 09:09:33,825	INFO	Starting worker [41346]
+2024-04-29 09:09:36,803	INFO	Stopping worker [41346]
+2024-04-29 09:09:36,804	INFO	Worker complete [41346]
+2024-04-29 09:09:36,803	INFO	Received signal SIGINT. Shutting down.
+2024-04-29 09:09:37,535	INFO	Server Stopped
+2024-04-29 09:09:40,580	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-29 09:09:40,580	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-29 09:09:41,256	INFO	Starting worker [41367]
+2024-04-29 10:26:29,592	INFO	Stopping worker [41367]
+2024-04-29 10:26:29,696	INFO	Worker complete [41367]
+2024-04-29 10:26:30,111	INFO	Starting worker [43155]
+2024-04-29 10:26:34,159	INFO	Stopping worker [43155]
+2024-04-29 10:26:34,158	INFO	Received signal SIGINT. Shutting down.
+2024-04-29 10:26:34,161	INFO	Worker complete [43155]
+2024-04-29 10:26:34,785	INFO	Server Stopped
+2024-04-29 10:26:36,536	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-29 10:26:36,536	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-29 10:26:37,499	INFO	Starting worker [43176]
+2024-04-29 10:26:52,994	WARNING	{'stpid': '13016', 'msg': 'No arrival times'}
+2024-04-29 10:26:58,640	WARNING	{'stpid': '13016', 'msg': 'No arrival times'}
+2024-04-29 10:30:56,213	WARNING	{'stpid': '13016', 'msg': 'No arrival times'}
+2024-04-29 10:31:57,459	ERROR	Exception occurred while handling uri: 'http://01a4-128-135-204-82.ngrok-free.app/chat'
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/server.py", line 20, in chat
+    verbalized_predictions = cta_data.verbalized_from_latlong(loc=lat_long_tup)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/cta_data.py", line 65, in verbalized_from_latlong
+    predictions = process_predictions_from_stops(stop_id_list=nearby_stops)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/cta_data.py", line 47, in process_predictions_from_stops
+    "time_until_arrival" : int(time),
+ValueError: invalid literal for int() with base 10: 'DLY'
+2024-04-29 10:33:09,676	INFO	Stopping worker [43176]
+2024-04-29 10:33:09,779	INFO	Worker complete [43176]
+2024-04-29 10:33:10,145	INFO	Starting worker [43420]
+2024-04-29 10:40:11,302	INFO	Stopping worker [43420]
+2024-04-29 10:40:11,308	INFO	Worker complete [43420]
+2024-04-29 10:40:11,818	INFO	Starting worker [43606]
+2024-04-29 10:40:36,706	INFO	Stopping worker [43606]
+2024-04-29 10:40:36,809	INFO	Worker complete [43606]
+2024-04-29 10:40:37,153	INFO	Starting worker [43643]
+2024-04-29 10:53:26,764	WARNING	Unable to complete request to /getpredictions with params {'stpid': '13016'}.
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2024-04-29 10:54:02,625	WARNING	Unable to complete request to /getpredictions with params {'stpid': '13016'}.
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2024-04-29 10:57:51,822	INFO	Stopping worker [43643]
+2024-04-29 10:57:51,927	INFO	Worker complete [43643]
+2024-04-29 10:57:52,320	INFO	Starting worker [44221]
+2024-04-29 11:58:05,582	INFO	Stopping worker [44221]
+2024-04-29 11:58:05,588	INFO	Worker complete [44221]
+2024-04-29 11:58:06,107	INFO	Starting worker [45590]
+2024-04-29 11:58:46,207	INFO	Stopping worker [45590]
+2024-04-29 11:58:46,209	INFO	Worker complete [45590]
+2024-04-29 11:58:46,547	INFO	Starting worker [45599]
+2024-04-29 12:00:12,634	INFO	Stopping worker [45599]
+2024-04-29 12:00:12,635	INFO	Worker complete [45599]
+2024-04-29 12:00:12,998	INFO	Starting worker [45609]
+2024-04-29 12:02:27,807	INFO	Stopping worker [45609]
+2024-04-29 12:02:27,808	INFO	Worker complete [45609]
+2024-04-29 12:02:28,140	INFO	Starting worker [45633]
+2024-04-29 12:02:48,156	INFO	Stopping worker [45633]
+2024-04-29 12:02:48,157	INFO	Worker complete [45633]
+2024-04-29 12:02:48,504	INFO	Starting worker [45642]
+2024-04-29 19:05:16,283	INFO	Stopping worker [45642]
+2024-04-29 19:05:16,287	INFO	Worker complete [45642]
+2024-04-29 19:05:16,831	INFO	Starting worker [49567]
+2024-04-29 19:05:44,726	INFO	Stopping worker [49567]
+2024-04-29 19:05:44,729	INFO	Worker complete [49567]
+2024-04-29 19:05:45,081	INFO	Starting worker [49616]
+2024-04-29 19:05:54,870	INFO	Stopping worker [49616]
+2024-04-29 19:05:54,872	INFO	Worker complete [49616]
+2024-04-29 19:05:55,224	INFO	Starting worker [49635]
+2024-04-29 19:05:57,924	INFO	Stopping worker [49635]
+2024-04-29 19:05:57,926	INFO	Worker complete [49635]
+2024-04-29 19:05:58,281	INFO	Starting worker [49638]
+2024-04-29 19:06:06,049	INFO	Stopping worker [49638]
+2024-04-29 19:06:06,051	INFO	Worker complete [49638]
+2024-04-29 19:06:06,404	INFO	Starting worker [49655]
+2024-04-29 19:06:16,220	INFO	Stopping worker [49655]
+2024-04-29 19:06:16,221	INFO	Worker complete [49655]
+2024-04-29 19:06:16,666	INFO	Starting worker [49679]
+2024-04-29 19:06:26,366	INFO	Stopping worker [49679]
+2024-04-29 19:06:26,368	INFO	Worker complete [49679]
+2024-04-29 19:06:26,728	INFO	Starting worker [49698]
+2024-04-29 19:09:13,033	INFO	Stopping worker [49698]
+2024-04-29 19:09:13,034	INFO	Worker complete [49698]
+2024-04-29 19:09:13,496	INFO	Starting worker [49775]
+2024-04-29 19:09:20,131	INFO	Stopping worker [49775]
+2024-04-29 19:09:20,132	INFO	Worker complete [49775]
+2024-04-29 19:09:20,485	INFO	Starting worker [49795]
+2024-04-29 19:09:31,287	INFO	Stopping worker [49795]
+2024-04-29 19:09:31,288	INFO	Worker complete [49795]
+2024-04-29 19:09:31,671	INFO	Starting worker [49814]
+2024-04-29 19:09:37,388	INFO	Stopping worker [49814]
+2024-04-29 19:09:37,389	INFO	Worker complete [49814]
+2024-04-29 19:09:37,733	INFO	Starting worker [49830]
+2024-04-29 19:10:55,669	INFO	Stopping worker [49830]
+2024-04-29 19:10:55,672	INFO	Worker complete [49830]
+2024-04-29 19:10:56,105	INFO	Starting worker [49875]
+2024-04-29 19:11:09,887	INFO	Stopping worker [49875]
+2024-04-29 19:11:09,888	INFO	Worker complete [49875]
+2024-04-29 19:11:10,254	INFO	Starting worker [49887]
+2024-04-29 19:12:08,951	INFO	Stopping worker [49887]
+2024-04-29 19:12:08,953	INFO	Worker complete [49887]
+2024-04-29 19:12:09,396	INFO	Starting worker [49927]
+2024-04-29 19:12:57,734	INFO	Stopping worker [49927]
+2024-04-29 19:12:57,736	INFO	Worker complete [49927]
+2024-04-29 19:12:58,079	INFO	Starting worker [49961]
+2024-04-29 19:13:11,924	INFO	Stopping worker [49961]
+2024-04-29 19:13:11,926	INFO	Worker complete [49961]
+2024-04-29 19:13:12,287	INFO	Starting worker [49985]
+2024-04-29 19:13:30,159	INFO	Stopping worker [49985]
+2024-04-29 19:13:30,160	INFO	Worker complete [49985]
+2024-04-29 19:13:30,524	INFO	Starting worker [50009]
+2024-04-29 19:13:34,198	INFO	Stopping worker [50009]
+2024-04-29 19:13:34,199	INFO	Worker complete [50009]
+2024-04-29 19:13:34,551	INFO	Starting worker [50012]
+2024-04-29 19:13:45,359	INFO	Stopping worker [50012]
+2024-04-29 19:13:45,361	INFO	Worker complete [50012]
+2024-04-29 19:13:45,721	INFO	Starting worker [50029]
+2024-04-29 19:16:56,238	INFO	Stopping worker [50029]
+2024-04-29 19:16:56,242	INFO	Worker complete [50029]
+2024-04-29 19:45:37,256	INFO	Received signal SIGINT. Shutting down.
+2024-04-29 19:45:38,095	INFO	Server Stopped
+2024-04-29 19:45:41,815	INFO	
+  ┌─────────────────────────────────────────────────────────────────┐
+  │                          Sanic v23.12.1                         │
+  │                 Goin' Fast @ http://0.0.0.0:8080                │
+  ├───────────────────────┬─────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │         app: __main__                   │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │        mode: production, single worker  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │      server: sanic, HTTP/1.1            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │      python: 3.9.6                      │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │    platform: macOS-12.5-arm64-arm-64bit │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ auto-reload: enabled                    │
+  │ [48;2;255;13;104m                     [0m │    packages: sanic-routing==23.12.0     │
+  │ Build Fast. Run Fast. │                                         │
+  └───────────────────────┴─────────────────────────────────────────┘
+
+2024-04-29 19:45:41,815	WARNING	[01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-04-29 19:45:42,495	INFO	Starting worker [51093]
+2024-04-29 19:46:06,198	ERROR	Exception occurred while handling uri: 'http://01a4-128-135-204-82.ngrok-free.app/chat'
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/server.py", line 22, in chat
+    direction = query_handler.convert_query_to_direction(query=query)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/query_handler.py", line 67, in convert_query_to_direction
+    result = constants.STR_TO_DIRECTION_MAP[direction]
+KeyError: ' NONE'
+2024-04-29 19:47:14,064	INFO	Stopping worker [51093]
+2024-04-29 19:47:14,168	INFO	Worker complete [51093]
+2024-04-29 19:47:14,496	INFO	Starting worker [51169]
+2024-04-29 19:48:04,745	ERROR	Exception occurred while handling uri: 'http://01a4-128-135-204-82.ngrok-free.app/chat'
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/server.py", line 22, in chat
+    direction = query_handler.convert_query_to_direction(query=query)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/query_handler.py", line 67, in convert_query_to_direction
+    result = constants.STR_TO_DIRECTION_MAP[direction]
+KeyError: 'Eastbound\nEastbound buses near 55th and Woodlawn will be heading towards the eastern direction.'
+2024-04-29 19:48:30,968	ERROR	Exception occurred while handling uri: 'http://01a4-128-135-204-82.ngrok-free.app/chat'
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/server.py", line 23, in chat
+    verbalized_predictions = cta_data.verbalized_from_latlong(loc=lat_long_tup, route_num=route_num, direction=direction)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/cta_data.py", line 89, in verbalized_from_latlong
+    filtered_predictions = filter_predictions(processed_predictions=processed_predictions, route_num=route_num, direction=direction)
+  File "/Users/zacharyrothstein/Documents/transit-hackathon-zach/src/cta_data.py", line 59, in filter_predictions
+    route_num_as_int = int(route_num)
+ValueError: invalid literal for int() with base 10: '-1.'
